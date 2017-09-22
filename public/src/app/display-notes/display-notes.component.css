@@ -1,0 +1,29 @@
+/*CSS reset settings here*/
+*{
+    margin: 0px;
+   padding: 0px;
+   }
+   
+.container{
+height: 500px;
+width: 600px;
+padding: 15px;
+border: 1px solid black;
+background-color: White;
+
+}
+
+.notes-lists {
+    height:200px;
+    width: 200px;
+    border: 1px solid black;
+    overflow: auto;  
+}
+
+.messages p {
+    color: red;
+}
+
+.success p {
+    color: blue;
+}

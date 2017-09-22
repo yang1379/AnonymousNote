@@ -1,0 +1,63 @@
+/*CSS reset settings here*/
+*{
+    margin: 0px;
+   padding: 0px;
+   }
+   
+   .container{
+    height: 500px;
+    width: 600px;
+    padding: 15px;
+    border: 1px solid black;
+    background-color: White;
+
+   }
+   
+   .messages p {
+       color: red;
+   }
+
+   .success p {
+       color: blue;
+   }
+   
+   .product_list {
+       width: 600px;
+       margin-bottom: 10px;
+       display: inline-block;
+       vertical-align: top;
+   }
+   
+   .pair {
+       width: 600px;
+       height: 25px;
+       margin-top: 10px;
+   }
+   
+   .pair p {
+     width: 100px;
+     display:inline-block;
+     text-align: left;
+     padding-right: 5px;
+   }
+
+   .pair p.error {
+    width: 200px;
+    color: red;
+    display:inline-block;
+    text-align: left;
+    padding-right: 5px;
+  }
+   
+   /* .ng-invalid { border: red solid 1px } */
+   /* .ng-invalid span.error { color: red;
+                  display: inline;
+        } */
+
+   /* .ng-valid { border: green solid 1px }
+   .ng-valid p.error {  }
+   .ng-untouched p.error {display: none }
+   .ng-touched p.error { color: red;
+                 display: inline; }
+   .ng-dirty { }
+   .ng-pristine { } */

@@ -1,0 +1,8 @@
+<div class='notes-lists'>
+  <div class='one-note' *ngFor='let note of notes; let idx=index'>
+    <p>{{ note.text }}</p>
+    <p>{{ note.createdAt | date: 'yMMMdjms' }} </p>
+  </div>
+</div>
+
+{{ notes | json }}

@@ -1,0 +1,27 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div class='container'>
+  <h1>Anonymous Notes</h1>
+  <br>
+
+  <div class='add_note'>
+    <form action="/add_note" #formCtrl="ngForm" method="post">
+    
+        <div class='pair'>
+            <p id='pNote'>Note:</p>
+            <input type='text'
+            required
+            minlength="3"
+            name='pNote'
+            [(ngModel)]="userNote"
+            #pNote='ngModel'>
+            <span *ngIf="pNote.errors?.required && pNote.dirty && pNote.invalid"><p class="error">Note text is required</p></span>
+            <span *ngIf="pNote.errors?.minlength && pNote.dirty && pNote.invalid"><p class="error">Note requires a minimum of 3 characters.</p></span>
+        </div>
+        <button type="button" [disabled]="!formCtrl.form.valid" (click)="addNote()">Add Note</button>
+    </form>
+
+</div>
+
+<app-display-notes></app-display-notes>
+
+<router-outlet></router-outlet>
